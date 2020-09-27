@@ -14,11 +14,12 @@ public static WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", 
 				System.getProperty("user.dir")+"/Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
+		
 	}
 	
 	@AfterTest
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 
 }
